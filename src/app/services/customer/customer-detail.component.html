@@ -1,0 +1,12 @@
+<div *ngIf="customer">
+      <h5>{{customer.name}} details!</h5>
+
+      <div>
+        <label>id: </label>{{customer.id}}
+      </div>
+      <div>
+        <label>name: </label>
+        <input [(ngModel)]="customer.name" placeholder="name"/>
+      </div>
+
+ </div>

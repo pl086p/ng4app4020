@@ -1,0 +1,12 @@
+<div *ngIf="car">
+  <h4>{{car.model}} details!</h4>
+  <div><label>id: </label>{{car.id}}</div>
+  <div>
+    <label>model: </label> {{car.model}}
+    <input [(ngModel)]="car.model" placeholder="model" />
+  </div>
+  <div>
+    <label>Manufacturer: </label> {{car.manufacturer}}
+    <input [(ngModel)]="car.manufacturer" placeholder="manufacturer" />
+  </div>
+</div>

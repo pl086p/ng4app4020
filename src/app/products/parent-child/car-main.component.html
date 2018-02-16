@@ -1,0 +1,43 @@
+<div class="tabContentContainer">
+
+    <h4>{{pTitle}}</h4>
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-3">
+                Master
+            </div>
+            <div class="col-sm-6">
+                Detail
+            </div>
+        </div>
+
+         <div class="row">
+            <div class="col-sm-3" style="background-color:lightyellow">
+                <ul class="cars">
+                  <li *ngFor="let car of pCars; let i=index" (click)="onSelect(car)">
+                    <span class="badge">{{i+1}}</span> {{car.model}}  by  {{car.manufacturer}}
+                  </li>
+                </ul>
+            </div>
+            <div class="col-sm-6" style="background-color:blue">
+                <car-detail [car]="selectedCar"></car-detail>
+            </div>
+         </div>
+
+        <div class="row">
+             <div class="col-sm-6" style="background-color:darkcyan">
+                Message from Child-Left: {{msgFromChild}} 
+                <selector-child-left 
+                    [msgFromParent]="msgFromParent"
+                    (sendMsgEvent) = "printMsg($event)">
+                </selector-child-left>
+            </div>
+            <div class="col-sm-6" style="background-color:grey">
+                <car-detail [car]="selectedCar"></car-detail>
+            </div>
+
+
+        </div>
+    </div>
+</div>
