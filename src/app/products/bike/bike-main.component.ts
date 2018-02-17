@@ -1,5 +1,5 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import { Bike } from '../bike-info/bike';
+import { Bike } from '../bike/bike';
 
 const BIKES: Bike[] = [
   { id: 1, model: 'CBR250R', manufacturer: 'Honda' },

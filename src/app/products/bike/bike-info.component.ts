@@ -6,7 +6,7 @@ import { Bike } from './bike';
   templateUrl: './bike-info.component.html',
   styleUrls: ['./bike-info.component.css']
 })
-export class BikeInfoComponent implements OnInit {
+export class ComBikeInfo implements OnInit {
 
   @Input() bike: Bike;
 

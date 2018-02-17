@@ -4,7 +4,8 @@ import { FormsModule }   from '@angular/forms';
 import { HttpModule }    from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { MatTabsModule } from '@angular/material';
-import { TabsModule } from 'ngx-bootstrap';
+import { TabsModule }      from 'ngx-bootstrap';
+import { AccordionModule } from 'ngx-bootstrap';
 
 // my modules with this application
 import { AppRoutingModule }  from './app.routing.module';
@@ -13,7 +14,7 @@ import { MySharedModule }    from './my-shared/my-shared.module';
 // Components
 import { AppComponent }      from './app.component';
 import { ComBike }           from './products/bike/bike-main.component';
-import { BikeInfoComponent } from './products/bike-info/bike-info.component';
+import { ComBikeInfo }       from './products/bike/bike-info.component';
 import { ComCar }            from './products/parent-child/car-main.component';
 import { ComCarList }        from './products/parent-child/car-list.component';
 import { ComCarDetail }      from './products/parent-child/car-detail.component';
@@ -35,7 +36,7 @@ import { CustomerDetailComponent}   from './services/customer/customer-detail.co
     declarations: [
         AppComponent,
         ComBoat, ComBoatDetail,
-        ComBike, BikeInfoComponent,
+        ComBike, ComBikeInfo,
         ComCar, ComCarList, ComCarDetail,
         ComChildLeft,
         BootstrapComponent, NgxTabComponent, OriginBootstrapComponent, 
@@ -53,7 +54,8 @@ import { CustomerDetailComponent}   from './services/customer/customer-detail.co
         MatTabsModule,
         TabsModule.forRoot(),
         AppRoutingModule,
-        MySharedModule
+        MySharedModule,
+        AccordionModule.forRoot()
     ],
     providers: [],
     bootstrap: [AppComponent]
