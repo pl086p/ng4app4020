@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Bike } from './bike';
+import { BikeType } from './bike-type';
 
 @Component({
   selector: 'app-bike-info',
@@ -8,7 +8,7 @@ import { Bike } from './bike';
 })
 export class ComBikeInfo implements OnInit {
 
-  @Input() bike: Bike;
+  @Input() bike: BikeType;
 
   constructor() { }
 
