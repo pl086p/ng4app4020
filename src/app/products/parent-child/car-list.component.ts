@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
-import { ProductType } from '../product-info/product-class';
+import { CarType } from './car-type';
 
 @Component({
     moduleId: module.id,
@@ -10,5 +10,5 @@ import { ProductType } from '../product-info/product-class';
 })
 export class ComCarList { 
   @Input('pTitle') title: String;
-  @Input('pCars')  pCars: ProductType;
+  @Input('pCars')  pCars: CarType;
 }

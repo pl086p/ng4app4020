@@ -1,0 +1,30 @@
+<div>
+    <selector-com-title [comTitle]="comTitle"></selector-com-title>
+
+    <tabset>
+        <tab heading="About" id="1">
+            <br />- Tabs:     import TabsModule from 'ngx-bootstrap';
+            <br />- service for boat: using constant data from './boat-mock-data';
+            <br />- service for others: using api from REST
+            <br />                      import  Injectable from '@angular/core'; for @Injectable()
+            <br />                      import  Headers, Http, Response from '@angular/http';
+            <br />- alert ng-template;
+        </tab>
+
+        <tab heading="Boat" id="2">
+            <app-boat-service></app-boat-service>
+        </tab>
+        <tab heading="Customer" id="3">
+            <app-http-api></app-http-api>
+        </tab>
+        <tab heading="Employee" id="4">
+            <app-service></app-service>
+        </tab>
+        <tab (select)="alertMe()">
+            <ng-template tabHeading>
+                <span class="badge badge-secondary">alertMe</span>
+            </ng-template>
+            alertMe tab: with ng-template tabHeading, class=badge badge-secondary 
+        </tab>
+    </tabset>
+</div>      

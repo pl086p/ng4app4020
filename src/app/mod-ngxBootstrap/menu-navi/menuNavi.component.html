@@ -1,7 +1,16 @@
 <div style="padding: 5px;">
     
-    <h3>My Angular 4</h3>
-
+    <h4>module ngx-bootstrap menu-navi</h4>
+    <!--
+    <ul>
+      <li *ngFor="let rLink of routeLinks" >
+        {{rLink.label}}
+      </li>
+    </ul>
+    -->
+    
+    https://www.concretepage.com/angular-2/angular-2-4-named-router-outlet-popup-example
+    
     <nav mat-tab-nav-bar >
         <a mat-tab-link
            *ngFor="let routeLink of routeLinks; let i = index;"
@@ -16,6 +25,6 @@
         </a>
     </nav>
 
-    <router-outlet></router-outlet>
+    <router-outlet name="aux"></router-outlet>
 
 </div>

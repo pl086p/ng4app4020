@@ -1,7 +1,7 @@
 import {Component, ViewEncapsulation} from '@angular/core';
-import { ProductType } from '../product-info/product-class';
+import { CarType } from './car-type';
 
-const CARS: ProductType[] = [
+const CARS: CarType[] = [
   { id: 1, model: 'Explorer', manufacturer: 'Ford' },
   { id: 2, model: 'Chevlet', manufacturer: 'GM' },
   { id: 3, model: 'Pilot', manufacturer: 'Honda' },
@@ -18,8 +18,8 @@ const CARS: ProductType[] = [
 export class ComCar { 
   pTitle = ' Master-Detail and Parent-Child (@Input, @Output)';
   pCars = CARS;
-  selectedCar: ProductType;
-  onSelect(car: ProductType): void { this.selectedCar = car; };
+  selectedCar: CarType;
+  onSelect(car: CarType): void { this.selectedCar = car; };
 
   msgFromParent = 'Hello, child!';
   msgFromChild  = '';

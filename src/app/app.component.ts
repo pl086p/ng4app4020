@@ -16,13 +16,12 @@ export class AppComponent implements OnInit {
 
     constructor(private router: Router) {
         this.routeLinks = [
-            { label: 'Bike',      link: './tabBike', index: 1 },
-            { label: 'Parent-Child', link: './tabParentChild',  index: 2 },
-            { label: 'Bootstrap', link: './tabBootstrap',index: 3 }, 
+            { label: 'About',     link: './tabAbout', index: 1 },
+            { label: 'Bike',      link: './tabBike', index: 2 },
             { label: 'ngUI',      link: './tabNgUI',index: 4 },  
-            { label: 'Boat (Sv)', link: './tabBoat', index: 5 },  
-            { label: 'EmpApi',    link: './tabEmpApi',index: 6 },            
-            { label: 'CustApi',   link: './tabCustApi',index: 7 },                 
+            { label: 'Parent-Child', link: './tabParentChild',  index: 5 },
+            { label: 'Service',   link: './tabService',index: 8 },      
+            { label: 'Ngx-Bs',    link: './tabNgxBs',index: 9 },       
         ];
     }
 

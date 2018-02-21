@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ProductType } from '../product-info/product-class';
+import { CarType } from './car-type';
 
 @Component({
   selector: 'car-detail',
@@ -8,7 +8,7 @@ import { ProductType } from '../product-info/product-class';
 })
 export class ComCarDetail implements OnInit {
 
-  @Input() car: ProductType;
+  @Input() car: CarType;
 
   constructor() { }
 

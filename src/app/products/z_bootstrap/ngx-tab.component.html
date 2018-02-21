@@ -1,0 +1,25 @@
+<div>
+    <tabset>
+        <tab heading="About" id="tab1">
+            <h5>Use ngx-bootstrap Tabs</h5>
+            (1) $ npm install --save ngx-bootstrap<br>
+            (2) index.html <br>
+                link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet"<br>
+            (3) app.module.ts<br>
+                import  TabsModule  from 'ngx-bootstrap';<br>
+                @NgModule -- imports: [TabsModule.forRoot(),...]<br>
+        </tab>
+        <tab heading="Tab-2">
+            tab-2 content
+        </tab>
+        <tab heading="Origin Bootstrap">
+            <origin-bootstrap></origin-bootstrap>
+        </tab>
+        <tab (select)="alertMe()">
+            <ng-template tabHeading>
+                <span class="badge badge-secondary">Click here!</span>
+            </ng-template>
+            I've got an HTML heading, and a select callback. Pretty cool!
+        </tab>
+    </tabset>
+</div>      
